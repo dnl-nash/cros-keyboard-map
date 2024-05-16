@@ -131,10 +131,29 @@ def get_keyd_config(physmap, inverted):
 {get_functional_row(physmap, use_vivaldi=True, super_is_held=False, super_inverted=inverted)}
 f13=coffee
 sleep=coffee
+rightalt = capslock
+rightcontrol = insert
 
 [meta]
 {get_functional_row(physmap, use_vivaldi=False, super_is_held=True, super_inverted=inverted)}
 {get_functional_row(physmap, use_vivaldi=True, super_is_held=True, super_inverted=inverted)}
+left = home
+right = end
+up = pageup
+down = pagedown
+backspace = delete
+1 = f1
+2 = f2
+3 = f3
+4 = f4
+5 = f5
+6 = f6
+7 = f7
+8 = f8
+9 = f9
+0 = f10
+minus = f11
+= = f12
 
 [alt]
 backspace = delete
