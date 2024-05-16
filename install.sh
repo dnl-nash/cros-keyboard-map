@@ -81,11 +81,7 @@ elif (grep -E "^(Sarien|Arcada)$" /sys/class/dmi/id/product_name &> /dev/null)
 then
 	cp configs/cros-sarien.conf cros.conf
 else
-	printf "By default, the top row keys will do their special function (brightness, volume, browser control, etc).\n"
-	printf "Holding the search key will make the top row keys act like fn keys (f1, f2, f3, etc).\n"
-	printf "Would you like to invert this? (y/N) "
-	read -r INVERT
-	[[ $INVERT =~ ^[Yy]$ ]] && python3 cros-keyboard-map.py -i || python3 cros-keyboard-map.py
+python3 cros-keyboard-map.py -i
 fi
 
 echo "Installing config"
